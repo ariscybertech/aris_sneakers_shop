@@ -5,8 +5,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            pinned: true,
+            backgroundColor: Colors.white,
+            leading: IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {},
+            ),
+          )
+        ],
+      ),
     );
   }
 }

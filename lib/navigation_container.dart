@@ -1,3 +1,5 @@
+import 'package:aris_sneakers_shop/pages/home_page.dart';
+import 'package:aris_sneakers_shop/pages/search_page.dart';
 import 'package:aris_sneakers_shop/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -11,12 +13,8 @@ class NavigationContainer extends StatefulWidget {
 class _NavigationContainerState extends State<NavigationContainer> {
   int _selectedPageIndex = 0;
   List<Widget> _appPages = [
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: Colors.blue,
-    ),
+    HomePage(),
+    SearchPage(),
     Container(
       color: Colors.blue,
     ),
