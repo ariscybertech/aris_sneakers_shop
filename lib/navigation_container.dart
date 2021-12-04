@@ -14,6 +14,15 @@ class _NavigationContainerState extends State<NavigationContainer> {
     Container(
       color: Colors.blue,
     ),
+    Container(
+      color: Colors.blue,
+    ),
+    Container(
+      color: Colors.blue,
+    ),
+    Container(
+      color: Colors.blue,
+    ),
   ];
 
   void _onIconTapped (int index) {
