@@ -1,3 +1,4 @@
+import 'package:aris_sneakers_shop/widgets/background_clipper.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -44,9 +45,12 @@ class HomePage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                    return Container(
-                      color: Colors.black,
-                      width: MediaQuery.of(context).size.width / 1.8,
+                    return ClipPath(
+                      clipper: BackgroundClipper(),
+                      child: Container(
+                        color: Colors.black,
+                        width: MediaQuery.of(context).size.width / 1.8,
+                      ),
                     );
                   }),
                 )
