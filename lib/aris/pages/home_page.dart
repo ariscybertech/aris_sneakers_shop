@@ -1,7 +1,7 @@
-import 'package:aris_sneakers_shop/models/shoe.dart';
-import 'package:aris_sneakers_shop/pages/shoe_detail.dart';
-import 'package:aris_sneakers_shop/widgets/background_clipper.dart';
-import 'package:aris_sneakers_shop/widgets/shoe_grid.dart';
+import 'package:aris_sneakers_shop/aris/models/shoe.dart';
+import 'package:aris_sneakers_shop/aris/pages/shoe_detail.dart';
+import 'package:aris_sneakers_shop/aris/widgets/background_clipper.dart';
+import 'package:aris_sneakers_shop/aris/widgets/shoe_grid.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

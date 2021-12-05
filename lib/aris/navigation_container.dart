@@ -1,6 +1,6 @@
-import 'package:aris_sneakers_shop/pages/home_page.dart';
-import 'package:aris_sneakers_shop/pages/search_page.dart';
-import 'package:aris_sneakers_shop/widgets/custom_bottom_nav_bar.dart';
+import 'package:aris_sneakers_shop/aris/pages/home_page.dart';
+import 'package:aris_sneakers_shop/aris/pages/search_page.dart';
+import 'package:aris_sneakers_shop/aris/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class NavigationContainer extends StatefulWidget {

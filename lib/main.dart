@@ -1,4 +1,4 @@
-import 'package:aris_sneakers_shop/navigation_container.dart';
+import 'package:aris_sneakers_shop/aris/navigation_container.dart';
 import 'package:flutter/material.dart';
 
 void main() {

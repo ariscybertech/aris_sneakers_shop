@@ -1,4 +1,4 @@
-import 'package:aris_sneakers_shop/models/shoe.dart';
+import 'package:aris_sneakers_shop/aris/models/shoe.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
