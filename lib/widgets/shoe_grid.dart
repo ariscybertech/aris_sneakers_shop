@@ -58,7 +58,7 @@ class ShoeGrid extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 8,
                     ),
                     Text(
                       shoes[index].price,
