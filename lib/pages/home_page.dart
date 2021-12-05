@@ -1,3 +1,4 @@
+import 'package:aris_sneakers_shop/models/shoe.dart';
 import 'package:aris_sneakers_shop/widgets/background_clipper.dart';
 import 'package:flutter/material.dart';
 
@@ -38,21 +39,51 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(height: 40),
                 Container(
-                  color: Colors.amber,
                   height: MediaQuery.of(context).size.height / 4.15,
                   child: ListView.builder(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 10,
-                    itemBuilder: (context, index) {
-                    return ClipPath(
-                      clipper: BackgroundClipper(),
-                      child: Container(
-                        color: Colors.black,
-                        width: MediaQuery.of(context).size.width / 1.8,
-                      ),
-                    );
-                  }),
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: categoriesShoes.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ClipPath(
+                            clipper: BackgroundClipper(),
+                            child: Container(
+                              color: categoriesShoes[index]
+                                  .bgColor
+                                  .withOpacity(0.75),
+                              width: MediaQuery.of(context).size.width / 1.8,
+                              child: Column(
+                                children: [
+                                  Stack(
+                                    children: [
+                                      Image.asset(
+                                        '${categoriesShoes[index].imageName}',
+                                        height: 130,
+                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: MediaQuery.of(context).size.width / 3.5,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(100),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Colors.black.withOpacity(0.25),
+                                              spreadRadius: 10,
+                                              blurRadius: 30,
+                                            )
+                                          ]
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
                 )
               ],
             ),
