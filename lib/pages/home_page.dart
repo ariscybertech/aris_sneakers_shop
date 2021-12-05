@@ -57,6 +57,7 @@ class HomePage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Stack(
+                                    alignment: Alignment.bottomCenter,
                                     children: [
                                       Image.asset(
                                         '${categoriesShoes[index].imageName}',
@@ -64,20 +65,42 @@ class HomePage extends StatelessWidget {
                                       ),
                                       Container(
                                         height: 50,
-                                        width: MediaQuery.of(context).size.width / 3.5,
+                                        width:
+                                            MediaQuery.of(context).size.width /
+                                                3.5,
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(100),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color: Colors.black.withOpacity(0.25),
-                                              spreadRadius: 10,
-                                              blurRadius: 30,
-                                            )
-                                          ]
-                                        ),
+                                            borderRadius:
+                                                BorderRadius.circular(100),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.25),
+                                                spreadRadius: 10,
+                                                blurRadius: 30,
+                                              )
+                                            ]),
                                       )
                                     ],
-                                  )
+                                  ),
+                                  Text(
+                                    categoriesShoes[index].name,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    categoriesShoes[index].price,
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),

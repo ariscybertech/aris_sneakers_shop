@@ -72,7 +72,7 @@ List<Shoe> categoriesShoes = [
     'assets/1.png',
     'lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam diam ut aliquam mauris ut aliquam mauris ut odio',
     '\$625',
-    Color(0xFFF616163),
+    Colors.green,
     [Colors.red, Colors.pink, Colors.yellow],
   ),
   Shoe(
@@ -80,7 +80,7 @@ List<Shoe> categoriesShoes = [
     'assets/2.png',
     'lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam diam ut aliquam mauris ut aliquam mauris ut odio',
     '\$625',
-    Color(0xFFF616163),
+    Colors.pink,
     [Colors.red, Colors.pink, Colors.yellow],
   ),
   Shoe(
@@ -88,7 +88,7 @@ List<Shoe> categoriesShoes = [
     'assets/3.png',
     'lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam diam ut aliquam mauris ut aliquam mauris ut odio',
     '\$625',
-    Color(0xFFF616163),
+    Colors.purple,
     [Colors.red, Colors.pink, Colors.yellow],
   ),
 ];
