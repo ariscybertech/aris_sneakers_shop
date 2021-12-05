@@ -1,16 +1,20 @@
-# aris_sneakers_shop
-
-A new Flutter project.
+# Hi there, I'm Behruz Hurramov
+![MobileScreenshot](screenshots/screenshot.gif)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```dart
+$ git clone https://github.com/ariscybertech/aris_instagram.git
+$ flutter packages get
+```
+Run the application and enjoy :tada::relaxed:
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- 🌱 I’m currently learning everything
+     I’m looking to collaborate with other content creators
+- 🥅 2021 Goals: Contribute more to Open Source projects
+- ⚡ Fun fact: I love to draw and play guitar / drums
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# Desctiption
+The business we are proposing to open is a high end sneaker store by the name of Laced Up.The major product in our store will be exclusive sneakers. Our two biggest brands will be Nike and Jordan. Exclusive Nike and Jordans will be in stock all the time and these exclusive shoes will bring in many customers as there is a huge market for them. This will not just be a footlocker or a champs we will be a one of a kind store . We will also have various brands of clothing in men, womens and childrens sizes. The clothing that we keep in stock will also be high end athletic apparel including Nike, UnderArmour, Adidas, etc. This clothing will bring in customers even if they are not looking for a pair of sneakers. We will also have a program where customers will be able to sell sneakers to use that we will buy and then sell in store. The sneakers that we buy will have to be in brand new condition and we will reseal them. The used sneakers will be cheaper then the new pair and also will look just as good.
