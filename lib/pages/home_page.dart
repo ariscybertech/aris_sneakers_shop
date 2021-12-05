@@ -1,5 +1,6 @@
 import 'package:aris_sneakers_shop/models/shoe.dart';
 import 'package:aris_sneakers_shop/widgets/background_clipper.dart';
+import 'package:aris_sneakers_shop/widgets/shoe_grid.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -61,7 +62,7 @@ class HomePage extends StatelessWidget {
                                     children: [
                                       Image.asset(
                                         '${categoriesShoes[index].imageName}',
-                                        height: 130,
+                                        height: 120,
                                       ),
                                       Container(
                                         height: 50,
@@ -107,9 +108,34 @@ class HomePage extends StatelessWidget {
                           ),
                         );
                       }),
-                )
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Divider(),
               ],
             ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: EdgeInsets.only(
+                left: 30,
+                top: 30,
+                bottom: 20,
+              ),
+              child: Text(
+                'Recomended for You',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+
+          // Shoe Grid
+          ShoeGrid(
+            shoes: categoriesShoes,
           ),
         ],
       ),
