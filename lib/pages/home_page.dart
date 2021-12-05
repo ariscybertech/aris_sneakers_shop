@@ -1,4 +1,5 @@
 import 'package:aris_sneakers_shop/models/shoe.dart';
+import 'package:aris_sneakers_shop/pages/shoe_detail.dart';
 import 'package:aris_sneakers_shop/widgets/background_clipper.dart';
 import 'package:aris_sneakers_shop/widgets/shoe_grid.dart';
 import 'package:flutter/material.dart';
@@ -46,63 +47,73 @@ class HomePage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemCount: categoriesShoes.length,
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: ClipPath(
-                            clipper: BackgroundClipper(),
-                            child: Container(
-                              color: categoriesShoes[index]
-                                  .bgColor
-                                  .withOpacity(0.75),
-                              width: MediaQuery.of(context).size.width / 1.8,
-                              child: Column(
-                                children: [
-                                  Stack(
-                                    alignment: Alignment.bottomCenter,
-                                    children: [
-                                      Image.asset(
-                                        '${categoriesShoes[index].imageName}',
-                                        height: 120,
+                        return GestureDetector(
+                          onTap: () {
+                            // go to shoe detail page
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ShoeDetail(shoe: categoriesShoes[index]);
+                            }));
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: ClipPath(
+                              clipper: BackgroundClipper(),
+                              child: Container(
+                                color: categoriesShoes[index]
+                                    .bgColor
+                                    .withOpacity(0.75),
+                                width: MediaQuery.of(context).size.width / 1.8,
+                                child: Column(
+                                  children: [
+                                    Stack(
+                                      alignment: Alignment.bottomCenter,
+                                      children: [
+                                        Image.asset(
+                                          '${categoriesShoes[index].imageName}',
+                                          height: 120,
+                                        ),
+                                        Container(
+                                          height: 50,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width /
+                                              3.5,
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(100),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.black
+                                                      .withOpacity(0.25),
+                                                  spreadRadius: 10,
+                                                  blurRadius: 30,
+                                                )
+                                              ]),
+                                        )
+                                      ],
+                                    ),
+                                    Text(
+                                      categoriesShoes[index].name,
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
                                       ),
-                                      Container(
-                                        height: 50,
-                                        width:
-                                            MediaQuery.of(context).size.width /
-                                                3.5,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(100),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: Colors.black
-                                                    .withOpacity(0.25),
-                                                spreadRadius: 10,
-                                                blurRadius: 30,
-                                              )
-                                            ]),
-                                      )
-                                    ],
-                                  ),
-                                  Text(
-                                    categoriesShoes[index].name,
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    categoriesShoes[index].price,
-                                    style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.white,
+                                    SizedBox(
+                                      height: 5,
                                     ),
-                                  ),
-                                ],
+                                    Text(
+                                      categoriesShoes[index].price,
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
