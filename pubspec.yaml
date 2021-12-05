@@ -37,6 +37,7 @@ dependencies:
   flutter_bloc: ^8.0.0
   firebase_auth: ^3.3.0
   firebase_core: ^1.10.2
+  mockito: ^5.0.16
 
 dev_dependencies:
   flutter_test:
