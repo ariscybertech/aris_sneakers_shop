@@ -1,4 +1,3 @@
-# Hi there, I'm Behruz Hurramov
 
 <h1 align="center">Aris Sneakers Shop</h1>
 
