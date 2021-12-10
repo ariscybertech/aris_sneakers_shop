@@ -1,6 +1,6 @@
 # Hi there, I'm Behruz Hurramov
 
-<h1 align="center">Aris Maps</h1>
+<h1 align="center">Aris Sneakers Shop</h1>
 
 <br />
  
